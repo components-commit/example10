@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.send("hello world");
 });
 
+app.get('/a', (req, res) => {
+    res.send("a");
+});
+
 app.use(express.static('public'));
 //=========================
 const port = process.env.PORT || 3070;
