@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/a', (req, res) => {
-    res.send("a");
+    res.send("ab");
 });
 
 app.use(express.static('public'));

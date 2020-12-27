@@ -3,9 +3,7 @@ describe('some interesting test', () => {
         cy.visit('https://www.google.com');
     })
 
-
     it('step 2', () => {
-
         cy.typeLogin({ email: 'fake@email.com', password: 'Secret1' })
     })
 }
