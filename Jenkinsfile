@@ -10,6 +10,7 @@ node {
     stage('Build image') {
   
        app = docker.build("melli4/example10:7.0")
+       echo "Running build ${env.BUILD_ID} on ${env.JENKINS_URL}"
     }
 
     stage('Test image') {
